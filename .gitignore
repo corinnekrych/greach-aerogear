@@ -1,0 +1,12 @@
+.DS_Store
+.svn
+demo
+demo-candy
+demo-skyline
+*.sublime-project
+*.sublime-workspace
+*.dev.*
+_wip
+node_modules
+public/browser.js
+public/flowtime.js
