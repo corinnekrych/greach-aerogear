@@ -1,0 +1,139 @@
+
+
+/* =================== Core, Push, Security section =====================================================================
+ */
+div.section {
+    text-align: left;
+    color: #ebebeb;
+    border-top: #121212 solid 16px; }
+div.section.stick-to-menu {
+    border-top: 0px; }
+div.section i {
+    color: grey; }
+
+div.section.core  .sect1 h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-size: 2em;
+    margin-left: 0.75em;
+    font-family: sans-serif;
+    text-shadow: none;
+ }
+
+div.section.push  .sect1 h2 {
+    font-size: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 0.75em;
+    font-family: sans-serif;
+    text-shadow: none;
+}
+
+div.section.security  .sect1 h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-size: 2em;
+    margin-left: 0.75em;
+    font-family: sans-serif;
+    text-shadow: none;
+}
+div.section.sync  .sect1 h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-size: 2em;
+    margin-left: 0.75em;
+    font-family: sans-serif;
+    text-shadow: none;
+}
+div.section .sect1 h3 {
+    text-transform: uppercase;
+    color: #ebebeb; }
+div.section p {
+    margin-left: 1em;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: none;
+}
+
+div.section .hljs {
+    background-color: #222222; }
+
+.section-strip {
+    border-top-width: 4px;
+    border-top-style: solid; }
+
+/* =================== GET IT pages =====================================================================
+ */
+
+div.core a {
+
+    color: #e17408;
+    text-decoration: none; }
+div.core strong {
+    font-weight: bold; }
+div.core a:hover {
+    text-decoration: underline; }
+div.core .section-strip {
+    border-top-color: #e17408; }
+
+div.push a {
+    color: #c652bb;
+    text-decoration: none; }
+div.push strong {
+    font-weight: bold; }
+div.push a:hover {
+    text-decoration: underline; }
+div.push .section-strip {
+    border-top-color: #c652bb; }
+div.push .padding-push {
+    margin-bottom: 5.7em; }
+
+div.security a {
+    color: #6cc319;
+    text-decoration: none; }
+div.security strong {
+    font-weight: bold; }
+div.security a:hover {
+    text-decoration: underline; }
+div.security .section-strip {
+    border-top-color: #6cc319; }
+
+div.sync a {
+    color: #3F95F1;
+    text-decoration: none; }
+div.sync strong {
+    font-weight: bold; }
+div.sync a:hover {
+    text-decoration: underline; }
+div.sync .section-strip {
+    border-top-color: #3F95F1; }
+
+
+
+
+
+
+
+/* =================== Custom Builder ===============================================================================
+ */
+.builder-alert {
+    display: none; }
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    margin-right: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid; }
+
+.alert-error {
+    background-color: #f2f2f2;
+    border-color: #e25027;
+    color: #e25027; }
+
+.desc {
+    padding: 0;
+    font-style: italic;
+    font-size: 0.75em; }
+
+
