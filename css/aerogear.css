@@ -6,6 +6,11 @@ div.section {
     text-align: left;
     color: #ebebeb;
     border-top: #121212 solid 16px; }
+
+.sect1 {
+margin-left: 6rem;
+}
+
 div.section.stick-to-menu {
     border-top: 0px; }
 div.section i {
