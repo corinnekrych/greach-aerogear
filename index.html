@@ -374,7 +374,7 @@
 
 <div class="ft-section" data-id="Cujo">
 
-    <div class="ft-page" data-id="Web Application" data-title="Web application">
+    <div class="ft-page" data-id="CujoTitle" data-title="CujoTitle">
         <div class="stack-center">
             <div class="stacked-center">
                 <h1>PART III</h1>
@@ -384,6 +384,95 @@
         </div>
     </div>
 
+    <div class="ft-page" data-id="Toolkit" data-title="Toolkit">
+        <div class="stack-center">
+            <div class="stacked-center">
+				<img class="stacked-center" src="img/cujo.png" />
+                <hr/><br/>
+                <h2>An architectural <strong class="greach">toolkit</strong> from Spring IO</h2>
+            </div>
+        </div>
+    </div>
+	
+    <div class="ft-page" data-id="Quote" data-title="Quote">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <blockquote><p>'The future of Javascript is modules not frameworks'</p>
+				<footer>— John Hann</footer></blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="CujoModules" data-title="CujoModules">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>Module</h1>
+                <hr/><br/>
+				<img class="stacked-center" src="img/cujo-modules.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="IOC" data-title="IOC">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>IOC Container in JS</h1>
+                <hr/><br/>
+				<ul>
+					<li>Declarative component creation</li>
+					<li>Lifecycle Management</li>
+					<li>Configuration</li>
+					<li>Dependency Injection</li>
+					<li>AOP</li>
+				</ul>
+            </div>
+        </div>
+    </div>
+				
+    <div class="ft-page" data-id="MeldWire" data-title="MeldWire">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>In action</h1>
+                <hr/><br/>
+				<div><pre><code class="language-javascript">todos: {
+    create: {
+            module: 'cola/Collection',
+            args: {
+                    strategyOptions: {
+                        validator: { module: 'app/create/validateTodo' }
+                    }
+            }
+    },
+    before: {
+            add: 'cleanTodo | generateMetadata',
+            update: 'cleanTodo'
+    }
+}</code></pre></div>
+				<p><span class="highlight">meld</span> + <span class="highlight">wire</span> = <3</p>				
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="LiveCoding" data-title="LiveCoding">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>Live Coding</h1>
+                <h2>Grails <strong>AeroGear</strong> + <strong class ="greach">cujoJS</strong> scaffolding</h2>
+                <hr/><br/>
+				<img class="stacked-center" src="img/stress.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <div class="ft-page" data-id="BeHappy" data-title="BeHappy">
+        <div class="stack-center">
+            <div class="stacked-center">
+                <h1>Try it, Use it and Be Happy</h1>
+                <hr/><br/>
+				<img class="stacked-center" src="img/happy.gif" />
+            </div>
+        </div>
+    </div>
 
 </div>
 
@@ -1017,18 +1106,16 @@ alert(person.name);
         <div class="stack-center">
           <div class="stacked-center">
             <h1>Mathsync setup - server</h1>
-            <pre><code class="language-javascript">var data = [/* ... */];
-
-function serialize(item) {
-  var buffer = new Buffer(item.key + ':' + item.value, 'utf-8');
-  return new Uint8Array(buffer).buffer;
-}
-
-var summarizer = require('mathsync').summarizer.fromItems(data, serialize);
-
-app.use(route.get('/summary/:level', function* (level) {
-  this.body = yield summarizer(level | 0);
-}));</code></pre>
+            <pre><code class="language-javascript">class SyncController {
+	def sync(String data) {
+		def information = JSON.parse(data)
+		
+		def content = Class.forName(information['className']).findAll();
+		final Summarizer summarizer = SummarizerFromItems.simple(new HashSet(content), new MySerializer());
+		
+		render summarizer.summarize(information['level']).toJSON()
+	}
+}</code></pre>
           </div>
         </div>
       </div>
