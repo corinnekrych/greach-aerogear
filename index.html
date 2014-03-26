@@ -769,15 +769,15 @@ alert(person.name);
         <!--</div>-->
     <!--</div>-->
 
-    <div class="ft-page" data-id="Phonegap" data-title="Phonegap">
-        <div class="stack-center">
-            <div class="stacked-center">
-                <h1>Demo</h1>
-                <hr/><br/>
-                <h2>Scaffolding with <strong class="greach">aerogear-mobile-scaffolding</strong> plugin</h2>
-            </div>
-        </div>
-    </div>
+    <!--<div class="ft-page" data-id="Phonegap" data-title="Phonegap">-->
+        <!--<div class="stack-center">-->
+            <!--<div class="stacked-center">-->
+                <!--<h1>Demo</h1>-->
+                <!--<hr/><br/>-->
+                <!--<h2>Scaffolding with <strong class="greach">aerogear-mobile-scaffolding</strong> plugin</h2>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
 
@@ -1112,8 +1112,8 @@ alert(person.name);
 	def sync(String data) {
 		def information = JSON.parse(data)
 		
-		def content = Class.forName(information['className']).findAll();
-		final Summarizer summarizer = SummarizerFromItems.simple(new HashSet(content), new MySerializer());
+		def content = Class.forName(information['className']).findAll()
+		final Summarizer summarizer = SummarizerFromItems.simple(new HashSet(content), new MySerializer())
 		
 		render summarizer.summarize(information['level']).toJSON()
 	}
